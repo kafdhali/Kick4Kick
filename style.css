@@ -1,0 +1,67 @@
+{
+    margin:0;
+    padding:0;
+}
+
+#container{
+    width: 100vw;
+    height:100vh;
+    background-color: black;
+    overflow: hidden;
+    position: absolute;
+    }
+#userScore {
+    color: bisque;
+    position: absolute;
+    top:10;
+    text-align: center;
+    font-size: 60px;
+    left: 30%
+
+}
+#BotScore {
+    color: rgb(255, 0, 0);
+    position: absolute;
+    top:10;
+    text-align: right;
+    font-size: 60px;
+    right: 30%
+}
+.verticalline {
+border: 1px dashed bisque;
+position: absolute;
+left:50%;
+width: 1px ;
+height: 100%;
+}
+#mypaddle{
+    width: 20px;
+    background-color: bisque;
+    height:100px;
+    position: absolute;
+    left:20px;
+    top:50%;
+    
+    transform: translateY(-50%);
+}
+#botpaddle{
+    width: 20px;
+    background-color: rgb(255, 0, 0);
+    height:100px;
+    position: absolute;
+    right:20px;
+    top:50%;
+    
+    transform: translateY(-50%);
+}
+#ball{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transform: translate(-50% , -50%);
+    
+}
