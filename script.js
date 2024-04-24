@@ -1,9 +1,9 @@
-let container = document.getElementById("container");
-let player1 = document.getElementById("player1");
-let botpaddle = document.getElementById("botpaddle");
-let ball = document.getElementById("ball");
-let userscore = document.getElementById("userScore");
-let botScore = document.getElementById("botScore");
+const container = document.getElementById("container");
+const player1 = document.getElementById("player1");
+const botpaddle = document.getElementById("botpaddle");
+const ball = document.getElementById("ball");
+const userscore = document.getElementById("userScore");
+const botScore = document.getElementById("botScore");
 
 let ArrowUpPressed = false;
 let ArrowDownPressed = false;
@@ -154,7 +154,7 @@ function mechanic(){
     ball.style.left = ball.offsetLeft + vx + "px";
     ball.style.top = ball.offsetTop + vy + "px";
     const paddleSpeed = 5; // Adjust speed as needed
-    if (ArrowUpPressed && player1.offsetTop > 0) {
+    if (ArrowUpPressed && player1.offsetTop > 55) {
         player1.style.top = player1.offsetTop - paddleSpeed + 'px';
     }
     if (ArrowDownPressed && player1.offsetTop + player1.offsetHeight < container.offsetHeight) {
@@ -163,7 +163,7 @@ function mechanic(){
     if (ArrowLeftPressed && player1.offsetLeft > 0) {
         player1.style.left = player1.offsetLeft - paddleSpeed + 'px';
     }
-    if (ArrowRightPressed && player1.offsetLeft + player1.offsetWidth < container.offsetWidth) {
+    if (ArrowRightPressed && player1.offsetLeft + player1.offsetWidth < container.offsetWidth/2) {
         player1.style.left = player1.offsetLeft + paddleSpeed + 'px';
     }
 
