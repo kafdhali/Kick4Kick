@@ -4,9 +4,9 @@ body{
 
 }
 #container{
-    width: 85vw;
-    height:85vh;
-    background-color: black;
+    width: 70vw;
+    height:70vh;
+    background-image: url('./2564494.jpg');
     margin-right: auto;
     margin-left: auto;
     overflow: hidden;
@@ -39,26 +39,26 @@ height: 100%;
 }
 #player1{
     width: 20px;
-    background-color: bisque;
-    height:100px;
+    background-color: #ffe4c4;
+    height:120px;
     position: absolute;
     left:20px;
     top:50%;
-    
+    border-radius: 10px;    
     transform: translateY(-50%);
 }
 #botpaddle{
     width: 20px;
     background-color: #ffe4c4;
-    height:100px;
+    height:120px;
     position: absolute;
     right:20px;
     top:50%;
-    
+    border-radius: 10px;
     transform: translateY(-50%);
 }
 #ball{
-    background-image: url('./50\ tennis.png');
+    background-image: url('./footballBall.png');
     position: absolute;
     top: 50%;
     left: 50%;
