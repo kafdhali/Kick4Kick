@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kick4Kick</title>
+    <link rel="stylesheet" href="./style.css" />
+    <audio id="hitSound" src="./Assets/ball-hit.mp3"></audio>
+    <audio id="whistleSound" src="./Assets/whistle.mp3"></audio>
+  </head>
+  <body>
+    <div id="container">
+      <div class="score1">
+        <div id="userScore">0</div>
+        <div id="botScore">0</div>
+      </div>
+      <div class="verticalline"></div>
+      <div id="player1"></div>
+      <div id="botpaddle"></div>
+      <div id="ball"></div>
+
+      <div id="winner">
+        <div class="containerScoreBoard">
+          <div>
+            <h3>Player 1</h3>
+            <div id="player1Score" class="score">0</div>
+          </div>
+          <div>
+            <h3>Bot</h3>
+            <div id="player2Score" class="score">0</div>
+          </div>
+        </div>
+        <div id="buttonContainer">
+          <button id="playAgainBtn">Play again!</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

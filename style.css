@@ -1,36 +1,34 @@
-body{
-  
+body {
+  background-color: #000000;
   overflow: hidden;
-
 }
-#container{
-    width: 70vw;
-    height:70vh;
-    background-image: url('./Assets/soccer-stadium.png');
-    margin-right: auto;
-    margin-left: auto;
-    overflow: hidden;
-    position: relative;
-    
+#container {
+  margin-top: 50px;
+  width: 70vw;
+  height: 70vh;
+  background-image: url("./Assets/soccer-stadium.png");
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  position: relative;
 }
 #userScore {
-    margin-top: 30px;
-    color: bisque;
-    position: absolute;
-    top:10;
-    text-align: center;
-    font-size: 60px;
-    left: 30%
-
+  margin-top: 30px;
+  color: bisque;
+  position: absolute;
+  top: 10;
+  text-align: center;
+  font-size: 60px;
+  left: 30%;
 }
 #botScore {
-    margin-top: 30px;
-    color: #ffe4c4;
-    position: absolute;
-    top:10;
-    text-align: right;
-    font-size: 60px;
-    right: 30%
+  margin-top: 30px;
+  color: #ffe4c4;
+  position: absolute;
+  top: 10;
+  text-align: right;
+  font-size: 60px;
+  right: 30%;
 }
 /*
 .verticalline {
@@ -41,34 +39,138 @@ width: 1px ;
 height: 100%;
 }
 */
-#player1{
-    width: 20px;
-    background-color: #4c00ff;
-    height:120px;
-    position: absolute;
-    left:20px;
-    top:50%;
-    border-radius: 10px;    
-    transform: translateY(-50%);
+#player1 {
+  width: 80px;
+  background-image: url("./Assets/player1\ boots.png");
+  background-size: cover;
+  height: 115px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  border-radius: 10px;
+  transform: translateY(-50%);
 }
-#botpaddle{
-    width: 20px;
-    background-color: #ff8c00;
-    height:120px;
-    position: absolute;
-    right:20px;
-    top:50%;
-    border-radius: 10px;
-    transform: translateY(-50%);
+#botpaddle {
+  width: 80px;
+  background-image: url("./Assets/boots.png");
+  background-size: cover;
+  height: 115px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  border-radius: 10px;
+  transform: translateY(-50%);
 }
-#ball{
-    background-image: url('./Assets/footballBall.png');
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    transform: translate(-50% , -50%);
-    
+#ball {
+  background-image: url("./Assets/footballBall.png");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.welcome-container {
+  padding-top: 10px;
+  background-image: url("./Assets/startGameBoard1.png");
+  width: 798px;
+  height: 477px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 100px; /* Adjust the margin-top value to position the container vertically */
+}
+
+.welcome-container h1 {
+  font-size: 2.5rem;
+  color: #000000;
+}
+
+.welcome-container p {
+  margin-top: 50px;
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.welcome-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.welcome-container ul li {
+  font-size: 1.1rem;
+  color: #000000; /* Adjust the color as needed */
+}
+
+.welcome-container button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.welcome-container button:hover {
+  background-color: #0056b3;
+}
+
+/* score board */
+
+#winner {
+  background-color: #9ca3af;
+  width: 575px;
+  height: 385px;
+  margin: auto;
+  margin-top: 25px;
+  position: relative;
+  border: 5px double #1f2937;
+  display: none;
+}
+.containerScoreBoard {
+  display: flex;
+  justify-content: space-around;
+}
+
+h3 {
+  color: white;
+  line-height: 35.89px;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.score {
+  background-color: #080001;
+  color: #ffffff;
+  width: 155px;
+  height: 120px;
+  text-align: center;
+  font-size: 110px;
+  font-family: monospace;
+  margin: auto;
+  margin-top: 14px;
+  border-radius: 5%;
+}
+#buttonContainer {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#playAgainBtn {
+  width: 180px;
+  height: 60px;
+  background-color: darkgreen;
+  color: white;
+  border: 2px dotted goldenrod;
+  font-size: 30px;
+  cursor: pointer;
 }
