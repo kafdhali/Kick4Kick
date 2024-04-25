@@ -19,7 +19,7 @@ let ArrowDownPressed = false;
 let ArrowLeftPressed = false;
 let ArrowRightPressed = false;
 
-ocument.addEventListener("keydown", keyDownHandler);
+document.addEventListener("keydown", keyDownHandler);
 document.addEventListener("keyup", keyUpHandler);
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("startButton").addEventListener("click", function () {
