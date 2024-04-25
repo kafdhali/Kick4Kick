@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("startButton").addEventListener("click", function () {
-    window.location.href = "index.html";
+    window.location.href = "game.html";
   });
 });
 const container = document.getElementById("container");
