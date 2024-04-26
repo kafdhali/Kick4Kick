@@ -1,4 +1,5 @@
 body {
+  background-image: url("./Assets/black.jpg");
   background-color: #000000;
   overflow: hidden;
 }

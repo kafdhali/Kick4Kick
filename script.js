@@ -183,7 +183,7 @@ function mechanic() {
     vy = v * Math.sin(angle);
   }
 
-  let errorDelay = 0.1;
+  let errorDelay = 0.2;
   botpaddle.style.top =
     botpaddle.offsetTop +
     (ball.offsetTop - botpaddle.offsetTop - botpaddle.offsetHeight / 2) *
